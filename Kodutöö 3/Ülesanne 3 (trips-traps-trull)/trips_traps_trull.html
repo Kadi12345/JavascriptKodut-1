@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+</head>
+<body>
+
+
+  <style>
+    td {
+      width: 100px;
+      height: 100px;
+      color: black;
+      line-height: 100px;
+      text-align: center;
+      font-size: 3rem;
+      border-style: solid;
+      border-color: black;
+    }
+  </style>
+  <button type="submit" >Alusta uuesti!</button>
+  <table>
+    <tr>
+      <td id="1"></td>
+      <td id="2"></td>
+      <td id="3"></td>
+    </tr>
+    <tr>
+      <td id="4"></td>
+      <td id="5"></td>
+      <td id="6"></td>
+    </tr>
+    <tr>
+      <td id="7"></td>
+      <td id="8"></td>
+      <td id="9"></td>
+    </tr>
+  </table>
+  <script>
+ const blocks = document.querySelector("table");
+    const reset = document.querySelector("button");
+
+    let selected = [];
+    let player = "X";
+
+
+    blocks.addEventListener('click', (e)=> {
+      if (selected.length <= 8) {
+        let id = e.target.id;
+        player == 'O'?output(id, 'X'): output(id, 'O');
+        selected.push(id);
+      }
+    });
+
+    reset.addEventListener('click',()=>{
+      selected.forEach(x => output(x,''));
+      selected = [];
+    })
+
+    function output(id, val) {
+      player = val;
+      document.getElementById(id).innerHTML = val;
+    }
+
+       </script>
+</body>
+</html>
