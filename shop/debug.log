@@ -1,0 +1,7 @@
+[0115/053637.794:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0115/194049.327:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0115/195724.280:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0115/202020.103:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0117/133810.903:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0117/141233.107:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0118/053415.299:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Kadik\AppData\Local\AVAST Software\Browser\User Data\Crashpad\attachments\6fd8a7b5-59fe-4d5a-8577-9a14f0483b0b: The system cannot find the path specified. (0x3)

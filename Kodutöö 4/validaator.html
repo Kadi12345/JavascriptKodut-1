@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vanuse validaator</title>
+</head>
+
+<body>
+    <script>
+        //minu lahendus
+        const AGE = prompt("Sisesta oma vanus");
+        if (AGE < 18) {
+            alert("Oled alaealine");
+        } else if (AGE >= 100) {
+            alert("Oled liiga vana");
+        } else {
+            alert("Oled täisealine");
+        }
+/**
+ * 
+ * Kommentaarid lahendusele:
+ * 1. Peaks olema 1 keeles (est, eng)
+ * 2. Peaksi olema ühtlane stiil snake_case või camelCase
+ * 3. Kasutajale logimiseks peaks alertima, mitte consol.logim
+ * 4. Muutujad tuleks deklareerida kas const v let´ga.
+ * 5. Muutuja väärtuseid tuleks kliendilt küsida, mitte ise määrata
+ * 6. Paluti kontrollida kas vanus on suurem/võrdne 100-ga. Selleks kasutada >= märki
+ * 7. Semikoolonit kasutada rea lõpus ja alati, mitte suvaliselt
+ * 8. ´´vunts´´ sulgusid kasutada samas kohas, kas rea lõpus viimase asjana, või rea alguses esimesena
+ * 9. Kasutada kas ühekordseid v kahekordseid jutumärke, mitte mõlemadi, kood peaks olema ühtlane.
+ * 
+var miinimum_vanus= 18
+let maxAge=100;
+function calculate(vanus)
+{
+if(miinimum_vanus = vanus){
+return "Täisealine!";}
+if(vanus > maxAge){
+return 'Liiga vana';
+}
+}
+console.log('Kasutaja on ' + calculate(21).toString()); // Debugimise jaoks
+alert('Te olete' + calculate(21));
+* */
+
+
+    </script>
+
+</body>
+
+</html>
